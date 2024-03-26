@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Connor Hyatt">
+    <meta name="description" content="Connor Hyatt's professional website">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <title>Connor Hyatt</title>
+    <link rel="stylesheet" href="C:\Users\hyatt\Documents\250_Labs\cjhyatt-lab6\static\style.css">
+    <script defer src="C:\Users\hyatt\Documents\250_Labs\cjhyatt-lab6\static\script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <header>
+        <h1 id="webname">Connor Hyatt</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html" class="active">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+        </header>
+    </header>
+    <div class="mainFun">
+        <div id="item1">
+            <h2>Things I love to do for fun</h2>
+            <!-- <button id="SeeMoreBTN" onclick="showList()">Click to see...</button> -->
+            <ul id="FavList">
+                <li>Skiing (especially park)</li>
+                <li>Learning new Japanese vocabulary</li>
+                <li>Solving Rubik's Cubes</li>
+                <li>Lifting</li>
+                <li>Journaling, my favorite occasion is on hikes</li>
+            </ul>
+            </div>
+            <div id="item2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HEXWRTEbj1I?si=C4UspxVStY6E3PkA" frameborder="0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="item3">
+                <h3>My favorite places</h3>
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+                    <!-- prettier-ignore -->
+                    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({key: "AIzaSyBlSsgT4TD545Z6KjPg4vUjg5zi6XuehHU", v: "weekly"});</script>
+            </div>
+            <div id="item4">
+                <img class="funIMG" src="C:\Users\hyatt\Documents\250_Labs\cjhyatt-lab5\static\Take_Aim__The_Pirate_Baseball_King_Infobox.jpg" alt="One Piece Baseball">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear">Connor Hyatt &copy</p>
+    </footer>
+
+</body>
+</html>
